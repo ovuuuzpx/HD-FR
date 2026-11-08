@@ -35,7 +35,7 @@ jobs:
           python -m patchright install --with-deps chrome
 
       - name: ⚙ 设置sing-box代理
-        continue-on-error: true
+        #continue-on-error: true
         env:
           NODE_LINK: ${{ secrets.NODE_LINK }}
         run: |
